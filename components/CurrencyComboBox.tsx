@@ -62,7 +62,7 @@ const mutation = useMutation({
     );
   },
 
-  onError: (e) => {
+  onError: () => {
     toast.error("Something went wrong 🥲", {
       id: "update-currency",
     });

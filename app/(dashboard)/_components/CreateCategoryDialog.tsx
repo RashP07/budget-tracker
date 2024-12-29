@@ -73,7 +73,7 @@ interface Props {
       (values: CreateCategorySchemaType) => {
         toast.loading("Creating category...", {
           id: "create-category",
-        }),
+        });
           mutate(values);
       },
       [mutate]
