@@ -84,7 +84,7 @@ function DesktopNavbar(){
     return(
         <div className='hidden border-separate border-b-[0.05px] border-gray-600
         bg-background md:block px-8'>
-         <nav className='container flex items-center justify-between px-8'>
+         <nav className='container flex items-center justify-between px-4 sm:px-6 lg:px-0 mx-auto'>
            <div className='flex h-[80px] min-h-[60px] items-center gap-x-4'>
         <Logo/>
         <div className='flex h-full ml-9'>

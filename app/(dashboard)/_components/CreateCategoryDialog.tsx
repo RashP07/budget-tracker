@@ -120,7 +120,7 @@ interface Props {
                 <FormItem>
                   <FormLabel>Name</FormLabel>
                   <FormControl>
-                    <Input placeholder="Category" {...field} />
+                    <Input placeholder="Category" {...field}  />
                   </FormControl>
                   <FormDescription>
                    Transaction Description (Optional)

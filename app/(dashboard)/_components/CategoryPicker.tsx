@@ -70,7 +70,7 @@ function CategoryPicker ({ type, onChange}: Props) {
           </Button>
           </PopoverTrigger>
 
-          <PopoverContent className="w-[200px] p-0">
+          <PopoverContent className="w-[200px] p-0 max-w-full overflow-hidden">
         <Command
           onSubmit={(e) => {
             e.preventDefault();
@@ -117,9 +117,9 @@ function CategoryPicker ({ type, onChange}: Props) {
 
  function CategoryRow ({ category }: { category: Category }) {
   return (
-    <div className="flex items-center gap-2">
-      <span role="img">{category.icon}</span>
-      <span>{category.name}</span>
+    <div className="flex items-center gap-2 overflow-hidden">
+      <span role="img" className="flex-shrink-0">{category.icon}</span>
+      <span className="truncate">{category.name}</span>
     </div>
   );
 };

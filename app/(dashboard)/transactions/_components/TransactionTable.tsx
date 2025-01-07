@@ -186,7 +186,7 @@ interface Props {
 
   
     return (
-      <div className='w-full px-9'>
+      <div className='w-full px-4 sm:px-6 lg:px-0'>
          <div className="flex flex-wrap items-end justify-between gap-2 py-4">
          <div className="flex gap-2">
           {table.getColumn("category") && (

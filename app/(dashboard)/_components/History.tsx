@@ -44,7 +44,7 @@ function History({userSettings} : {userSettings : UserSettings}) {
     historyDataQuery.data && historyDataQuery.data.length > 0;
 
   return (
-    <div className='container px-8 pb-4'>
+    <div className='container px-4 sm:px-6 lg:px-0 pb-4 mx-auto'>
      <h2 className="mt-12 text-3xl font-bold">
       History
       </h2>
@@ -58,7 +58,7 @@ function History({userSettings} : {userSettings : UserSettings}) {
               setTimeframe={setTimeframe}
             />
 
-            <div className="flex h-10 gpa-2">
+            <div className="flex h-10 gap-2">
               <Badge
                 variant={"outline"}
                 className="flex items-center gap-2 text-sm"
@@ -171,7 +171,7 @@ function History({userSettings} : {userSettings : UserSettings}) {
              {!dataAvailable && (
               <Card className='flex h-[300px] flex-col items-center justify-center bg-background'>
 
-              NO data for the selected period
+              No data for the selected period
               <p className='text-sm text-muted-foreground'>
                 Try selecting a different period or adding new transactions
               </p>
