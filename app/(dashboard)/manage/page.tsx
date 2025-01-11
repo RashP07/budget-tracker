@@ -18,8 +18,6 @@ import { PlusSquare, TrashIcon, TrendingDown, TrendingUp } from "lucide-react";
 import React from "react";
 import CreateCategoryDialog from "../_components/CreateCategoryDialog";
 import DeleteCategoryDialog from "../_components/DeleteCategoryDialog";
-//import CreateCategoryDialog from "../_components/CreateCategoryDialog";
-//import DeleteCategoryDialog from "../_components/DeleteCategoryDialog";
 
 const page = () => {
     return (

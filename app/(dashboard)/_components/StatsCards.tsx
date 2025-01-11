@@ -23,6 +23,7 @@ interface Props {
         ).then((res) => res.json()),
     });
 
+    
     const formatter = useMemo(() => {
       return GetFormatterForCurrency(userSettings.currency);
     }, [userSettings.currency]);

@@ -92,6 +92,13 @@ function CreateTransactionDialog({ trigger, type }: Props) {
 
   const onSubmit = useCallback(
     (values: CreateTransactionSchemaType) => {
+      if (!values.category) {
+        toast.error("Please choose a category!", {
+          id: "create-transaction-category-error",
+        });
+        return;
+      }
+     
       toast.loading("Creating transaction...", {
         id: "create-transaction",
       });
